@@ -25,5 +25,5 @@ GLOBAL OPTIONS:
 
 ```bash
 
-ghban --orgs myorg --users spammer01,spammer02,spammer03
+ghban --orgs myorg01,myorg02 --users spammer01,spammer02,spammer03
 ```
