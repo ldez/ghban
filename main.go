@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/google/go-github/v62/github"
+	"github.com/google/go-github/v85/github"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/oauth2"
 )
@@ -43,7 +43,8 @@ func main() {
 		return nil
 	}
 
-	if err := app.Run(os.Args); err != nil {
+	err := app.Run(os.Args)
+	if err != nil {
 		log.Fatal(err)
 	}
 }
